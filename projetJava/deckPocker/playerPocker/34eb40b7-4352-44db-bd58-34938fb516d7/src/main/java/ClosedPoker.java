@@ -1,5 +1,6 @@
 public class ClosedPoker {
     public static void main(String ...args){
+        //Deck deckDebut = new Deck(); -> initialisation du deck
         Player p1 = new Player("Nicolas");
         Player p2 = new Player("Elio");
         Player p3 = new Player("Flavio");
@@ -8,6 +9,7 @@ public class ClosedPoker {
         p1.setHand(Deck.newRandomHand());
         p2.setHand(Deck.newRandomHand());
         p3.setHand(Deck.newRandomHand());
+
 
         //returns the cards the players want to discard and get new ones
         Card[] cardsP1=p1.getCardsToDiscard();
@@ -18,6 +20,7 @@ public class ClosedPoker {
 
         Card[] cardsP3=p3.getCardsToDiscard();
         p3.addCard(Deck.getRandomCards(cardsP3.length));
+
 
         //check who wins
         if(p1.beats(p2) && p1.beats(p3)){
