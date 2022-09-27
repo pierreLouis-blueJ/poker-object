@@ -1,7 +1,7 @@
 public class Card {
-    protected String nom;
-    protected String couleur;
-    protected Card(String name, String color){
+    public String nom;
+    public String couleur;
+    public Card(String name, String color){
         this.nom = name;
         this.couleur = color;
 
